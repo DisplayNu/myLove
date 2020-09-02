@@ -1,11 +1,553 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>时间回忆录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no,target-densityDpi=super-high-dpi">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" type="text/css" rel="stylesheet" charset="utf-8" />
+    <script src="js/jquery.js"></script>
+    <script src="js/GSAP/TweenMax.min.js"></script>
+    <script src="./js/GSAP/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/jquery.hammer.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/mScrollPage.js"></script>
+    <script src="js/preLoad.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat' id='cnzz_stat_icon_1257417163'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257417163' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
 </head>
 <body>
-    dsdsf
+
+<div class="firstload">
+    <img src="images/star0.png">
+    <img src="images/star1.png">
+    <img src="images/loading_heart1.png">
+    <img src="images/loading_heart_wave.png">
+    <img src="images/loading_light0.png">
+    <img src="images/loading_heart_empty.png">
+</div>
+<div class="siteMain siteIndex">
+    <!--<div class="btnMusic"><img src="images/btn_music.png"></div>-->
+    <div class="mainContent canTouch">
+        <div class="wrap">
+            <div class="bg posabs"></div>
+            <ul>
+                <li class='sky0 fullScreenSzie dynamicBG'>
+                    <ul>
+                        <li><img src="images/star1.png"></li>
+                    </ul>
+                </li>
+                <li class='sky1 fullScreenSzie'></li>
+                <li class='sky2 fullScreenSzie isTableCell'>
+                    <div class="stars posabs"></div>
+                    <!--<div class="t0"><img src="images/index_t0.png"></div>-->
+                    <!--<div class="t1"><img src="images/index_t1.png"></div>-->
+                    <div class="p0">
+                        <div class="star posabs"><img src="images/index_figure_star.png"></div>
+                        <div class="figure"><img src="images/index_figure.png"></div>
+                    </div>
+                    <div class="b0">
+                        <div class="wave0 posabs"><img src="images/index_b0_wave0.png"></div>
+                        <div class="wave1 posabs"><img src="images/index_b0_wave1.png"></div>
+                        冬瓜
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="siteMain siteSelect">
+    <div class="msgbox msgSelecctTips">
+        <div class="wrap posabs">
+            <div class="p0"><img src="images/select_tips.png"></div>
+            <div class="w0">我们的故事<br>点击屏幕进入选择故事</div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="bg posabs"></div>
+        <ul class="pos">
+            <li class='hit'><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+        </ul>
+        <ul class="stars">
+            <li v=0><div class="w">心墙</div><img src="images/star_p0.png"></li>
+        </ul>
+
+    </div>
+</div>
+<div class="siteMain sitePageLoad">
+    <div class="mainContent fullScreenSzie isTableCell">
+        <div class="bg posabs"></div>
+        <div class="w0">1</div>
+        <div class="w1">2</div>
+        <div class="w2">0%</div>
+    </div>
+</div>
+<div class="siteMain siteWork">
+    <div class="msgbox msgShare">
+        <div class="wrap">
+            <div class="bg posabs"></div>
+            <!--<div class="p0 posabs"><img src="images/work_p0.png"></div>-->
+            <div class="b b0 posabs">其他故事</div>
+        </div>
+    </div>
+    <div class="arrow"><img src="images/work_arrow.png"></div>
+    <div class="mainContent">
+        <ul>
+
+            <!-- 				<li class='fullScreenSzie'>
+                                <img src="images/works/w0/p_0.jpg">
+                                <div class="title"><span class="t0">滕健作品，魅族手机拍摄</span><span class="t1">1/10</span></div>
+                                <div class="word">你与我，相隔千里</div>
+                            </li>
+             -->
+        </ul>
+    </div>
+</div>
+<!-- <audio class="musicBox" id="musicTap" preload="metadata" src="mp3/tap.mp3"></audio> -->
 </body>
 </html>
+
+<script>
+    var photoScrollAction;
+    var workSeeOver=0;
+    var starsRunning=0;
+    var worksArr = new Array();
+    var workWArr = new Array();
+    var itemId;
+    var workId;
+    var canTouch=1;
+    var thisWorkId=0;
+    var loadOverTimer;
+    var photoArr = new Array();
+
+    worksArr=[
+        {"t":"触不到的恋人","c":"多希望，你就在我身旁。","id":3},
+        {"t":"恋人","c":"兄弟以上，恋人已满。","id":1},
+        {"t":"遥远的附近","c":"爱情，也许就在身边。","id":6},
+        {"t":"初识","c":"初与君相识，犹如故人归。","id":4},
+        {"t":"初遇","c":"缘深缘浅原如梦，絮言絮语续半生。","id":2},
+        {"t":"初遇","c":"缘深缘浅原如梦，絮言絮语续半生。","id":8},
+        {"t":"初恋","c":"有时候，分手，是为了以后更好地相爱。","id":5},
+        {"t":"Online To Offline","c":"我们在虚拟世界相识，实打实地相爱。","id":7},
+        {"t":"心墙","c":"我的心有一堵墙，但你为我开了窗。","id":0},
+    ]
+
+    workWArr[0]=["遇见妳，是最美丽的意外","是妳，让我在单身8年之后，重新相信爱情","这美好，恨不能早点相遇","我开始习惯有妳的陪伴","我喜欢妳求我买爆米花的样子","我喜欢妳假装不理我的样子","我喜欢有妳陪伴的旅行","我喜欢把妳背起来游戏","我喜欢和妳，迎着风，一起前行",]
+    workWArr[1]=["我们在一起两年多了","认识自我的过程，我们花了很长时间","曾经一度怀疑是否能够找到真爱","直到某一天我们遇到了对方","接触之后，发现彼此都是对味的人","我们成为朋友，成为兄弟","也成为恋人","我们一起生活，一起跑步","时刻相互依偎在一起","一起勇敢爱下去",]
+    workWArr[2]=[
+        "我们曾在同一个城市上生活十几年，没有任何交集",
+        "前世五百次的回眸，才会换来今生的擦肩而过。<br>今生短短的相见一面，前世又聚集了多少的情缘。",
+        "十七岁那年的雨季<br>成长已慢慢接近",
+        "我们在网上认识，却从未见过面<br>虽然现实中仅仅一墙之隔",
+        "然而,命运的齿轮却已悄悄运转<br>也许一切都是命运石之门的选择",
+        "也许是上天注定,遇见妳，是最美丽的意外",]
+    workWArr[3]=["你与我，相隔千里","思念，真的是一种病","每天都要看看你，才能安稳入眠","每逢佳节，总想象你在我身边","这座城很小，到处都是你我的回忆","有时甚至幻想着，你会突然出现","任性的时候，就不顾一切飞到你身边","我们的故事，丰富到可以写成一篇长篇小说","而你，是我的最佳男主角","期待着有一天，能紧握你的手，大步往前走",]
+    workWArr[4]=[
+        "那年，我们步入了向往的大学生涯",
+        "步入大学的我们都很迷茫",
+        "而你如同一个天使，走进我的生活",
+        "也许真的有前世，遇到你就有说不出的感觉",
+        "每天聊天到深夜，我们成为朋友，成为兄弟",
+        "也成为恋人",
+      ]
+    workWArr[5]=["分手一年之后，还是觉得彼此最舒服","习惯了彼此的依偎","习惯了彼此的陪伴","就连彼此的凝望都那么默契","创业的压力曾让我们失衡","还好我们理解了生活","爱情和事业都在我们共同的蓝图里","失而复得后，会更珍惜有你的时光","以及有你的风景","爱情有很多选择，但你是唯一",]
+    workWArr[6]=["我们曾在同一个小镇上生活十几年，没有任何交集","这家烧烤店，你我都分别光临过无数次，却从没遇到过","距离很近，却又很远","直到某一天，我们无意中相遇","爱情来得太快，比小说里写的还更加意外","我去你的农科院，体验你的生活","曾经每日独自渡江上班，如今却有了你的陪伴","我们享受着彼此的肉体、精神以及其他一切","我们在遥远的附近，痛快地爱着",]
+    workWArr[7]=["我们在网上认识，却从未见过面","在一次长板活动上，我们见到了对方","第一次短暂相处，便发现我们如此契合","分别后，彼此都在对方的心里住下了","喜欢和你在一起的感觉，便又飞到你身边","享受与你的每一次拥抱","在一起的时光，我们都分外珍惜","世界那么大，我只想和你相依一隅","纷扰喧闹的世界里，你最真实","感谢爱情，网住了我和你",]
+    workWArr[8]=[
+        "那年，我们步入了向往的大学生涯",
+        "步入大学的我们都很迷茫",
+        "而你如同一个天使，走进我的生活",
+        "也许真的有前世，遇到你就有说不出的感觉",
+        "每天聊天到深夜，我们成为朋友，成为兄弟",
+        "也成为恋人",
+        "每一次枕你入眠，都会确信，一见钟情并非传说","回忆第一次见面，红墙下的你，温柔又美丽","我们心照不宣，默契地牵起对方的手","我拖着你的脸颊，双眼诉说着永远","但爱情，有甜蜜，也有忧愁和叹息","我们跟所有情侣一样，会冷战，会矛盾","幸好，你会借着烟火的微光自省","我也会在心中回环往复地思念你","和好如初会更懂彼此的弥足珍贵","我们都坚定要把“一见钟情”变为“一眼永恒”",]
+
+
+
+    //加载...
+    $(function(){
+        var preLoadImgList = new Array('images/index_bg.png', 'images/index_star0.png', 'images/index_star1.png','images/loading_heart_wave.png', 'images/star_p0.png', 'images/star_p1.png', 'images/star_p2.png', 'images/star_p3.png', 'images/star_p4.png', 'images/star_p5.png', 'images/star_p6.png', 'images/star_p7.png', 'images/star_p8.png');
+        preLoad(preLoadImgList);
+    })
+
+    function siteLoaded(){
+
+        setBGSize(640,1008);
+
+        html='';
+        for(i in worksArr){
+            d=worksArr[i];
+            html+='<li v='+i+' read=false><div class="item"><div class="w">'+d.t+'</div><img src="images/star_p'+i+'.png"></div></li>'
+        }
+        html+=html;
+        $('.siteSelect .stars').html(html);
+
+        if(location.href.indexOf('test.m.muzhibuluo.com')==-1){
+            // $(".main").css("opacity",1);
+            // TweenMax.to($(".siteLoading"),0.3,{x:0,autoAlpha:0,display:'none',onComplete:function(){$(".siteLoading").remove();}})
+            // changePage(3);
+        }
+
+        $('.siteIndex .b0').hammer({}).on("tap pan", function(evt){
+            buttonAnmi($(this),"closeDiv($('.siteIndex'));openDiv($('.siteSelect'));");
+        })
+
+        $('').hammer({}).on("pan", function(evt){
+            deltaY=evt.gesture.deltaY
+            deltaL=$('.siteSelect .stars').width()*4.3;
+            deltaA=Math.asin(deltaY/-deltaL)/Math.PI*180
+            // console.log(deltaA);
+            // console.log(evt.gesture.deltaY)
+            $('.siteSelect .stars li').each(function(){
+                thisR=$(this)[0]._gsTransform.rotation;
+                toR=thisR+deltaA;
+                setAstar($(this),toR)
+                // setAstar($(this),toR);
+                // toR+=20;
+            })
+        });
+        $('.siteSelect .stars li').each(function(){
+            $(this).hammer({}).on("tap click", function(evt){
+                obj=$(this);
+                r=obj[0]._gsTransform.rotation % 360;
+                if((r==360 || r==0) && canTouch==1){
+                    canTouch=0;
+                    // TweenMax.fromTo(obj.find('.w'),0.5,{autoAlpha:0, display:'block'},{autoAlpha:1})
+                    // TweenMax.to(obj.find('img'),0.5,{autoAlpha:0})
+                    // musicTap.play();
+
+                    itemId=obj.attr('v');
+                    workId=worksArr[itemId].id;
+                    makeWork(itemId, workId);
+                    // musicBox.src='mp3/m'+workId+'.mp3';
+                    $('.sitePageLoad .w0').text(worksArr[itemId].t);
+                    $('.sitePageLoad .w1').text(worksArr[itemId].c);
+                    $('.msgShare').hide();
+                    $('.siteSelect .stars li[v='+itemId+']').attr('read',true);
+
+                    var anmi = new TimelineMax();
+                    anmi
+                        .fromTo(obj.find('.w'),0.5,{autoAlpha:0, display:'block'},{autoAlpha:1})
+                        .to(obj.find('img'),0.5,{autoAlpha:0},'-=0.5')
+                        .fromTo($('.siteSelect'),1,{autoAlpha:1},{autoAlpha:0,display:'none',delay:2})
+                        .fromTo($('.sitePageLoad'),2,{autoAlpha:0,display:'block'},{autoAlpha:1,display:'block'},'-=2')
+                        .fromTo($('.sitePageLoad .w0'),1,{y:'-=50%',autoAlpha:0},{y:'0%',autoAlpha:1})
+                        .fromTo($('.sitePageLoad .w1'),1,{autoAlpha:0},{autoAlpha:1})
+                        .fromTo($('.sitePageLoad .w2'),0.5,{autoAlpha:0},{autoAlpha:0.2})
+                        .to($('.siteSelect .stars li[v='+itemId+'] img'),0,{autoAlpha:0})
+                        .to($('.siteSelect .stars li[v='+itemId+'] .w'),0,{autoAlpha:1,display:'block',onComplete:loadingWork})
+                    ;
+
+
+
+                }
+            });
+        })
+        $('.siteSelect').hammer({}).on("panend", function(evt){
+            // if(starsRunning!=1){
+            starsRunning=1;
+            if(evt.gesture.deltaY>=0){
+                aa=-1;
+            }else{
+                aa=1;
+            }
+
+            TweenMax.to($('.siteSelect .stars li[read=false] .w'),0.2,{autoAlpha:0, display:'none'})
+            TweenMax.to($('.siteSelect .stars li[read=false] img'),0.2,{autoAlpha:1})
+            time=0.5;
+            $('.siteSelect .stars li').each(function(){
+                thisR=$(this)[0]._gsTransform.rotation;
+                // toR=thisR+20*aa;
+                toR=Number($(this).attr('angle'))+20*aa;
+                $(this).attr('angle',toR);
+                setAstar($(this),toR,time)
+            })
+            setTimeout('starsRunning=0',time*1000);
+            // }
+        });
+        $('.siteSelect .msgSelecctTips').hammer({}).on("tap pan", function(evt){
+            closeDiv($('.msgSelecctTips'));
+        })
+
+        $('.siteWork ul').hammer({}).on("panup", function(evt){
+            l=$('.siteWork ul li').length;
+            id=thisWorkId+1;
+            if(id<=l-1){
+                changePager(id);
+            }
+            if(thisWorkId>=l-1 && workSeeOver==1){
+                // canTouch=0;
+                openDiv($('.msgShare'));
+                var anmi = new TimelineMax();
+                anmi
+                    .fromTo($('.msgShare .p0'),1,{autoAlpha:0,y:'-=5%'},{autoAlpha:1,y:'0%'})
+                    .fromTo($('.msgShare .b'),1,{autoAlpha:0,y:'+=20%'},{autoAlpha:1,y:'0%'})
+                ;
+            }
+        })
+        $('.siteWork ul').hammer({}).on("pandown", function(evt){
+            l=$('.siteWork ul li').length;
+            id=thisWorkId-1;
+            if(id>=0){
+                changePager(id);
+            }
+        })
+        $('.siteWork .msgShare .bg').hammer({}).on("tap", function(evt){
+            closeDiv($('.msgShare'));
+        })
+        $('.siteWork .msgShare .b0').hammer({}).on("tap", function(evt){
+            resetWork();
+            canTouch=1;
+            $('.siteWork').hide();
+            $('.msgShare').hide();
+            $('.shareLayer').hide();
+            buttonAnmi($(this),"openDiv($('.siteSelect'));");
+            // buttonAnmi($(this),"closeDiv($('.msgShare'));closeDiv($('.shareLayer'));closeDiv($('.siteWork'));openDiv($('.siteSelect'));");
+        })
+
+        $('.siteWork .msgShare .b1').hammer({}).on("tap", function(evt){
+            buttonAnmi($(this),"openDiv($('.shareLayer'));");
+        })
+
+        //滑动设置
+        // photoScrollAction = new mScrollPage();
+        // photoScrollAction.scroller = $('.siteWork .mainContent');
+        // photoScrollAction.onBegin(function(thisId,nextId){
+        // })
+        // photoScrollAction.onComplete(function(thisId){
+        // 	l=$('.siteWork ul li').length;
+        // 	if(thisId>=l-1){
+        // 		workSeeOver=1
+        // 	}
+        // })
+        // photoScrollAction.onPanEnd(function(thisId){
+        // 	console.log(thisId)
+        // 	l=$('.siteWork ul li').length;
+        // 	if(thisId>=l-1 && workSeeOver==1){
+        // 		openDiv($('.msgShare'));
+        // 	}
+        // })
+        // photoScrollAction.init();
+
+        pageAnmi();
+        setStars();
+        // makeWork(0,3);
+    }
+
+    function changePager(id){
+        if(canTouch==1){
+            canTouch=0;
+            obj0=$($('.siteWork ul li')[thisWorkId]);
+            obj1=$($('.siteWork ul li')[id]);
+            // console.log(thisWorkId+" : "+id)
+            TweenMax.fromTo(obj0,0.5,{autoAlpha:1, display:'block'},{autoAlpha:0, display:'none'})
+            TweenMax.fromTo(obj1,0.5,{autoAlpha:0, display:'none'},{autoAlpha:1, display:'block', delay:0.5, onComplete:function(){
+                    thisWorkId=id;
+                    canTouch=1;
+                    l=$('.siteWork ul li').length;
+                    if(thisWorkId>=l-1){
+                        workSeeOver=1
+                    }
+                }})
+        }
+    }
+
+    function loadingWork(){
+
+        var count = 0;
+        var fire = false;
+        var fireFn = function(){
+            fire = true;
+            $(".siteLoading .txt span").text(per+'%');
+            clearTimeout(loadOverTimer);
+            loadOverTimer=setTimeout("closeDiv($('.sitePageLoad'));openDiv($('.siteWork'));canTouch=1",1000);
+        }
+
+        for(var i = 0, len = photoArr.length; i < len; i++){
+            var img = new Image();
+            var loadFn = function(e){
+                count++;
+                per=Math.floor((count/len)*100);
+                $(".sitePageLoad .w2").text(per+'%');
+                if (count >= len && !fire) {
+                    fireFn();
+                };
+            }
+            img.onload = loadFn;
+            img.onerror = loadFn;
+            img.src = photoArr[i];
+        }
+    }
+    //制作相册
+    function makeWork(itemId,workId){
+        data=workWArr[workId];
+        photoArr=new Array();
+        html='';
+        l=data.length;
+        for(i in data){
+            photoArr.push('images/works/w'+workId+'/p_'+i+'.jpg');
+            html+='<li>';
+            html+='	<img  src="images/works/w'+workId+'/p_'+i+'.jpg">';
+            html+='	<div class="title"><span class="t1">'+(Number(i)+1)+'/'+l+'</span></div>';
+            html+='	<div class="word">'+data[i]+'</div>';
+            html+='</li>';
+        }
+        $('.siteWork ul').html(html);
+        $('.siteWork ul li').hide();
+        $($('.siteWork ul li')[0]).show();
+        // photoScrollAction.goto(0);
+        // photoScrollAction.thisId=0;
+        workSeeOver=0;
+        thisWorkId=0;
+
+
+        // loadingWork();
+    }
+    function resetWork(){
+        // photoScrollAction.goto(0);
+        // photoScrollAction.thisId=0;
+        $('.siteWork .mainContent').scrollTop(0)
+    }
+    //星盘设置
+    function setStars(){
+        var toR=-80;
+        $('.siteSelect .stars li').each(function(){
+            $(this).attr('angle',toR);
+            setAstar($(this),toR,0);
+            toR+=20;
+        })
+    }
+    //每个星座设置
+    function setAstar(obj,toR,time){
+        toR=toR%360;
+        // toS=(90-Math.abs(toR))/90 * Math.cos(toR/180*Math.PI);
+        toS=Math.abs(Math.cos(toR/180*Math.PI));
+        toS*=toS;
+        if(toR==0 || toR==360){
+            toA=1;
+            id=obj.attr('v');
+            $('.siteSelect .pos li').removeClass('hit')
+            $($('.siteSelect .pos li')[id]).addClass('hit')
+        }else{
+            toA=0.3;
+        }
+        TweenMax.to(obj,time,{force3D:true, rotation:toR+'_short', ease:Back.easeOut, transformOrigin:'430% 50%'})
+        TweenMax.to(obj.find('.item'),time,{force3D:true, scale:toS, autoAlpha:toA, ease:Back.easeOut, transformOrigin:'center center'})
+    }
+    //开场
+    function pageAnmi(){
+        //流星
+        for(i=0;i<20;i++){
+            html='<li><img src="images/star1.png"></li>';
+            $('.siteIndex .sky0 ul').append(html);
+        }
+        $('.siteIndex .sky0 ul li').each(function(){
+            obj=$(this);
+            toS=Math.random()*0.5+0.3;
+
+            toX=obj.width();
+            // toY=Math.random()*($(window).height()*0.5)-obj.height()*toS;
+            toY=Math.random()*($(window).height()*1.5);
+
+            TweenMax.to(obj,0,{x:toX, y:toY, scaleX:-toS, scaleY:toS, autoAlpha:toS})
+
+            toX2=-($(window).width()+obj.width()*toS);
+            toY2=obj.height()*toS*6+toY;
+            delay=Math.random()*4+1;
+            repeatDelay=Math.random()*2+1;
+            time=Math.random()*3+3;
+
+            TweenMax.to(obj,time,{force3D:true, x:toX2, y:toY2, delay:delay, repeat:-1, repeatDelay:repeatDelay, ease:Expo.easeOut})
+
+        })
+
+        var anmi = new TimelineMax();
+        toT=-($('.siteIndex .mainContent .wrap').height()-$(window).height());
+        anmi
+            .to($('.siteIndex .mainContent .wrap'),9,{force3D:true, y:toT, /*ease:Linear.easeNone*/},'+=5')
+            // .to($('.siteIndex .mainContent .wrap'),1,{force3D:true, y:toT, /*ease:Linear.easeNone*/},'+=0')
+            .from($('.siteIndex .t0'),1,{autoAlpha:0,y:'50%'},'-=6')
+            .from($('.siteIndex .t1'),1,{autoAlpha:0,y:'50%'},'-=5')
+            .from($('.siteIndex .p0 .star'),2,{autoAlpha:0,scale:1.2},'-=4')
+            .from($('.siteIndex .p0 .figure'),2,{autoAlpha:0},'-=3')
+            .from($('.siteIndex .stars'),2,{autoAlpha:0},'-=2')
+            .from($('.siteIndex .b0'),0.5,{autoAlpha:0,y:'10%'},'-=1')
+            .from($('.siteIndex .b0 .wave0'),1,{scaleX:0.5, autoAlpha:0, transformOrigin:"left center"})
+            .from($('.siteIndex .b0 .wave1'),1,{scaleX:0.5, autoAlpha:0, transformOrigin:"right center", onComplete:indexStar},'-=1')
+        // .to($('.siteIndex .p0 .star'),1,{autoAlpha:0.3, repeat:-1, yoyo:true})
+
+        // .to($('.page0 .w0 .tips img'),2,{bezier:{type:'quadratic', values:[{scale:0, autoAlpha:1},{scale:2, autoAlpha:1},{scale:2, autoAlpha:0}]}, repeat:-1, ease:Expo.easeOut});
+        ;
+        // pageAnmiArr.push(anmi);
+        // anmi.pause(0);
+
+        function indexStar(){
+            TweenMax.to($('.siteIndex .p0 .star'),1,{autoAlpha:0.1, delay:0.5, repeat:-1, yoyo:true})
+            TweenMax.to($('.siteIndex .stars'),1,{autoAlpha:0.3, repeat:-1, yoyo:true})
+        }
+
+        TweenMax.fromTo($('.siteSelect .mainContent .bg'),1,{autoAlpha:1},{autoAlpha:0.3, repeat:-1, yoyo:true})
+        TweenMax.fromTo($('.siteSelect .msgSelecctTips .wrap .p0'),1,{rotation:5},{rotation:-5, repeat:-1, yoyo:true, transformOrigin:'right center'})
+        // TweenMax.fromTo($('.sitePageLoad .w0'),1,{y:0},{y:-10, repeat:-1, yoyo:true})
+        TweenMax.fromTo($('.sitePageLoad .bg'),1,{autoAlpha:1,},{autoAlpha:0.3, repeat:-1, yoyo:true})
+        TweenMax.fromTo($('.siteWork .arrow'),0.5,{y:0,},{y:5, repeat:-1, yoyo:true})
+        TweenMax.fromTo($('.shareLayer .p0'),1,{autoAlpha:1,},{autoAlpha:0.2, repeat:-1, yoyo:true})
+        TweenMax.fromTo($('.shareLayer .p1'),1,{y:0,},{y:10, repeat:-1, yoyo:true})
+    }
+
+
+    //初始化数据
+    // getUserData();
+    // function getUserData(){
+    //     $.ajax({
+    //         type: "GET",
+    //         url:"/biz/meizu_s01e04/init",
+    //         data:{instance:$.getUrlParam('instance')},
+    //         dataType:'json',
+    //         success: function(data) {
+    //             if(data.success==true){
+    //                 myGameDate=data.data;
+    //                 // alert(JSON.stringify(myGameDate));
+    //                 //调用微信接口
+    //                 $.getScript("http://res.wx.qq.com/open/js/jweixin-1.0.0.js",function(){
+    //                     getWxJsRole();
+    //                 })
+    //             }else{
+    //                 alert(data.msg);
+    //             }
+    //         },
+    //         beforeSend: function(){
+    //             // $(".ajaxLoading").show();
+    //         },
+    //         complete: function(data){
+    //             // $(".ajaxLoading").hide();
+    //         }
+    //
+    //     })
+    // }
+
+</script>
