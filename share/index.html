@@ -145,7 +145,7 @@
       <p id="loading-txt"></p>
     </div>
   </div>
-  <div id="play-btn"><i class="iconfont" style="font-size: 20px;">&#xe617;</i></div>
+  <!-- <div id="play-btn"><i class="iconfont" style="font-size: 20px;">&#xe617;</i></div> -->
   <img class="load-img" onload="loadDone();pcTip()" src="./public/photo/1.jpg">
   <img class="load-img" onload="loadDone()" src="./public/photo/2.jpg">
   <img class="load-img" onload="loadDone()" src="./public/photo/3.jpg">
@@ -628,7 +628,7 @@
     <audio id="mp3" src="./public/music/music.mp3" autoplay loop></audio>
     <script src="./public/js/js.fullpage.js"></script>
     <script type="text/javascript"
-      src="http://api.map.baidu.com/api?v=2.0&ak=S6EO9oPso0n8aTMvfH1g0aLUX6vGZx1l"></script>
+      src="https://api.map.baidu.com/api?v=2.0&ak=S6EO9oPso0n8aTMvfH1g0aLUX6vGZx1l"></script>
     <script>
       // 滚屏动画控制
 
@@ -778,44 +778,44 @@
       }
 
       // 音乐播放控制
-      window.onload = function () {
-        let mp3 = document.querySelector('#mp3')
-        let playBtn = document.querySelector('#play-btn')
-        let play
+      // window.onload = function () {
+      //   let mp3 = document.querySelector('#mp3')
+      //   let playBtn = document.querySelector('#play-btn')
+      //   let play
 
-        mp3.load()
+      //   mp3.load()
 
-        document.addEventListener("WeixinJSBridgeReady", function () {
-          mp3.play()
-          if (!mp3.paused) {
-            this.style.animationPlayState = 'running'
-            mp3.play()
-            play = true
-          }
-        }, false)
+      //   document.addEventListener("WeixinJSBridgeReady", function () {
+      //     mp3.play()
+      //     if (!mp3.paused) {
+      //       this.style.animationPlayState = 'running'
+      //       mp3.play()
+      //       play = true
+      //     }
+      //   }, false)
 
-        play = !mp3.paused && mp3.readyState === 4
+      //   play = !mp3.paused && mp3.readyState === 4
 
-        if (play) {
-          playBtn.style.animationPlayState = 'running'
-        } else {
-          playBtn.style.animationPlayState = 'paused'
-        }
+      //   if (play) {
+      //     playBtn.style.animationPlayState = 'running'
+      //   } else {
+      //     playBtn.style.animationPlayState = 'paused'
+      //   }
 
-        playBtn.addEventListener('click', function (event) {
-          if (play) {
-            this.style.animationPlayState = 'paused'
-            mp3.pause()
-            play = false
-          } else {
-            if (mp3.readyState === 4) {
-              this.style.animationPlayState = 'running'
-              mp3.play()
-              play = true
-            }
-          }
-        })
-      }
+      //   playBtn.addEventListener('click', function (event) {
+      //     if (play) {
+      //       this.style.animationPlayState = 'paused'
+      //       mp3.pause()
+      //       play = false
+      //     } else {
+      //       if (mp3.readyState === 4) {
+      //         this.style.animationPlayState = 'running'
+      //         mp3.play()
+      //         play = true
+      //       }
+      //     }
+      //   })
+      // }
     </script>
 </body>
 
