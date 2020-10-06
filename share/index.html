@@ -10,6 +10,23 @@
   <link rel="stylesheet" href="./public/css/animate.css">
   <link rel="stylesheet" href="./public/css/index.css">
   <style type="text/css">
+  #play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #play-btn  img {
+    width: 20px;
+    height: auto;
+  }
+    .start img {
+      width: 80%;
+      height: auto;
+      opacity: .4;
+      margin: 0 auto;
+      display: block;
+    }
+
     #loading-mask {
       width: 100%;
       height: 100%;
@@ -145,24 +162,25 @@
       <p id="loading-txt"></p>
     </div>
   </div>
-  <!-- <div id="play-btn"><i class="iconfont" style="font-size: 20px;">&#xe617;</i></div> -->
-  <img class="load-img" onload="loadDone();pcTip()" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/1.jpg">
+  <div id="play-btn"><img src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/music.png" alt=""></div>
+  <img class="load-img" onload="loadDone();pcTip()"
+    src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/1.jpg">
   <img class="load-img" onload="loadDone()" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/2.jpg">
   <img class="load-img" onload="loadDone()" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/3.jpg">
   <img class="load-img" onload="loadDone()" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/4.jpg">
   <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/6.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/7.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/8.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/9.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/10.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/11.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/12.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/13.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/14.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/15.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/16.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/17.jpg">
-  <img class="load-img"  src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/18.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/7.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/8.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/9.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/10.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/11.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/12.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/13.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/14.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/15.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/16.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/17.jpg">
+  <img class="load-img" src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/18.jpg">
   <div class="wp">
     <div class="wp-inner">
       <div class="page page1">
@@ -313,7 +331,8 @@
       <div class="page page2">
         <div class="photo-wrap">
           <div class="full-bg js-animate animated animation-0"
-            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/3.jpg);width: 100%;height: 100%;" data-animate="myzoomIn">
+            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/3.jpg);width: 100%;height: 100%;"
+            data-animate="myzoomIn">
           </div>
         </div>
         <div class="ele-wrap">
@@ -364,8 +383,8 @@
       <div class="page page3">
         <div class="photo-wrap">
           <div class="full-bg js-animate animated animation-5000"
-            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/6.jpg);width: 100%;height: 100%;" data-sec="zoomCycle"
-            data-time="0">
+            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/6.jpg);width: 100%;height: 100%;"
+            data-sec="zoomCycle" data-time="0">
           </div>
           <div class="full-bg js-animate animated animation-800"
             style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/4.jpg);width: 100%;height: 100%;position: absolute;top: 0;left: 0;"
@@ -469,8 +488,8 @@
       <div class="page page4">
         <div class="photo-wrap">
           <div class="full-bg js-animate animated animation-5000"
-            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/7.jpg);width: 100%;height: 100%;" data-sec="zoomCycle"
-            data-time="0">
+            style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/7.jpg);width: 100%;height: 100%;"
+            data-sec="zoomCycle" data-time="0">
           </div>
           <div class="full-bg js-animate animated animation-600"
             style="background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/8.jpg);width: 100%;height: 100%;position: absolute;top: 0;left: 0;"
@@ -574,28 +593,38 @@
       <div class="page page5">
         <div class="photo-wrap">
           <div class="photo-box js-animate animated animation-2000" data-animate="fadeIn" data-time="100" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 1;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/9.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/9.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="fadeInDown" data-time="3000" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 2;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/10.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/10.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="fadeInUp" data-time="6000" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 3;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/11.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/11.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="fadeIn" data-time="9000" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 4;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/12.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/12.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="rollIn" data-time="12000" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 5;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/18.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/18.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="rotateInDownRight" data-time="15000"
             style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 6;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/14.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/14.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="rotateIn" data-time="18000" style="position: absolute;width: 100%;height: 38%;top: 0;left: 0;z-index: 7;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/15.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/15.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="rotateInDownRight" data-time="18000"
             style="position: absolute;width: 100%;height: 62%;top: 38%;left: 0;z-index: 8;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/16.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/16.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="rotateInDownRight" data-time="21000"
             style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 9;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/17.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/17.jpg);">
+          </div>
           <div class="photo-box js-animate animated animation-2000" data-animate="zoomIn" data-time="24000" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 10;
-                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/13.jpg);"></div>
+                        background-image: url(https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/13.jpg);">
+          </div>
           <h4 class="js-animate animated animation-2000" data-animate="myzoomIn" data-time="24000"
             style="position: absolute;width: 100%;bottom: 6%;left: 0;z-index: 11;text-align: center;line-height: 28px;">
             10月24日<br>
@@ -616,13 +645,13 @@
         <div id="location-btn"></div>
         <div id="map-msg">
           <p class="js-animate animated" data-animate="bounceInDown" data-time="0">
-              凯旋宫大酒店(八一宾馆店) 山东省聊城市东昌府区兴华东路72号</p>
-        
+            凯旋宫大酒店(八一宾馆店) 山东省聊城市东昌府区兴华东路72号</p>
+
           <p class="js-animate animated" data-animate="bounceInUp" data-time="3000">有任何疑问请致电 新郎&新娘</p>
         </div>
       </div>
     </div>
-    <span class="start"><i class="iconfont" style="color: #fff;font-size: 30px;">&#xe606;</i></span>
+    <span class="start"><img src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/upupup.png" alt=""></span>
     <audio id="mp3" src="./public/music/music.mp3" autoplay loop></audio>
     <script src="./public/js/js.fullpage.js"></script>
     <script type="text/javascript"
@@ -632,7 +661,6 @@
 
       if (isMobile !== false) {
         var loadTimer = setInterval(() => {
-          console.log(loadSum)
           if (loadSum >= 4) {
             start()
           }
@@ -652,7 +680,6 @@
         }, 100);
         document.getElementsByClassName('wp-inner')[0].fullpage({
           change: function (e) {
-            console.log(1111111)
             clearTime()
             // 移除动画属性
             forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
@@ -663,11 +690,14 @@
               }
             });
 
-
-
-     if (e.cur === 5 && !mapFlag) {
+            if (e.cur === 5 && !mapFlag) {
               initMap()
             }
+            if (document.querySelector(".start")) {
+              document.querySelector(".start").style.display =  e.cur === 5 ? 'none':'block'
+            }
+
+
 
             domLists = document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate')
             forEach.call(domLists, v => {
@@ -690,7 +720,7 @@
 
           },
           afterChange: function (e) {
-       
+
           }
         });
       }
@@ -713,7 +743,7 @@
       function initMap() {
         if (window.BMap) {
           mapFlag = true
-          var mapCenter = [ 115.998014, 36.468113]
+          var mapCenter = [115.998014, 36.468113]
           var map = new BMap.Map("map", { minZoom: 10, maxZoom: 14 })
 
           map.centerAndZoom(new BMap.Point(mapCenter[0], mapCenter[1]), 13);
@@ -776,44 +806,44 @@
       }
 
       // 音乐播放控制
-      // window.onload = function () {
-      //   let mp3 = document.querySelector('#mp3')
-      //   let playBtn = document.querySelector('#play-btn')
-      //   let play
+      window.onload = function () {
+        let mp3 = document.querySelector('#mp3')
+        let playBtn = document.querySelector('#play-btn')
+        let play
 
-      //   mp3.load()
+        mp3.load()
 
-      //   document.addEventListener("WeixinJSBridgeReady", function () {
-      //     mp3.play()
-      //     if (!mp3.paused) {
-      //       this.style.animationPlayState = 'running'
-      //       mp3.play()
-      //       play = true
-      //     }
-      //   }, false)
+        document.addEventListener("WeixinJSBridgeReady", function () {
+          mp3.play()
+          if (!mp3.paused) {
+            this.style.animationPlayState = 'running'
+            mp3.play()
+            play = true
+          }
+        }, false)
 
-      //   play = !mp3.paused && mp3.readyState === 4
+        play = !mp3.paused && mp3.readyState === 4
 
-      //   if (play) {
-      //     playBtn.style.animationPlayState = 'running'
-      //   } else {
-      //     playBtn.style.animationPlayState = 'paused'
-      //   }
+        if (play) {
+          playBtn.style.animationPlayState = 'running'
+        } else {
+          playBtn.style.animationPlayState = 'paused'
+        }
 
-      //   playBtn.addEventListener('click', function (event) {
-      //     if (play) {
-      //       this.style.animationPlayState = 'paused'
-      //       mp3.pause()
-      //       play = false
-      //     } else {
-      //       if (mp3.readyState === 4) {
-      //         this.style.animationPlayState = 'running'
-      //         mp3.play()
-      //         play = true
-      //       }
-      //     }
-      //   })
-      // }
+        playBtn.addEventListener('click', function (event) {
+          if (play) {
+            this.style.animationPlayState = 'paused'
+            mp3.pause()
+            play = false
+          } else {
+            if (mp3.readyState === 4) {
+              this.style.animationPlayState = 'running'
+              mp3.play()
+              play = true
+            }
+          }
+        })
+      }
     </script>
 </body>
 
