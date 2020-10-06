@@ -65,14 +65,8 @@ html, body {
   width: 34px;
   height: 34px;
 }
-.start i{
+.start img{
   position: absolute;
-  left: 50%;
-  top: 10px;
-  margin-left: -9px;
-  width: 19px;
-  height: 12px;
-  background-size: 100% 100%;
   -webkit-animation: start 2s infinite ease-in-out;
   animation: start 2s infinite ease-in-out;
 }
