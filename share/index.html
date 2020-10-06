@@ -10,22 +10,24 @@
   <link rel="stylesheet" href="./public/css/animate.css">
   <link rel="stylesheet" href="./public/css/index.css">
   <style type="text/css">
-  #play-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #play-btn  img {
-    width: 20px;
-    height: auto;
+    #play-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  }
+    #play-btn img {
+      width: 20px;
+      height: auto;
+
+    }
+
     .start img {
       width: 100%;
       height: auto;
       margin: 0 auto;
       display: block;
-  
+
     }
 
     #loading-mask {
@@ -643,12 +645,23 @@
       </div>
       <div class="page page6" style="position: relative;">
         <div id="map"></div>
-        <div id="location-btn"></div>
+        <div id="location-btn"> <img src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/acp-icon.png"
+            alt="">
+        </div>
         <div id="map-msg">
           <p class="js-animate animated" data-animate="bounceInDown" data-time="0">
+            <img style="width: 20px;height: auto;vertical-align: middle;"
+              src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/pos-icon.png" alt="">
             凯旋宫大酒店(八一宾馆店) 山东省聊城市东昌府区兴华东路72号</p>
 
-          <p class="js-animate animated" data-animate="bounceInUp" data-time="3000">有任何疑问请致电 新郎&新娘</p>
+          <p class="js-animate animated" data-animate="bounceInDown" data-time="2000">
+            <img style="width: 20px;height: auto;vertical-align: middle;"
+              src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/pos-icon.png" alt="">
+            自火车站乘坐K1/K2/K6/K9路即可到达</p>
+          <p class="js-animate animated" data-animate="bounceInDown" data-time="4000">
+            <img style="width: 20px;height: auto;vertical-align: middle;"
+              src="https://donggua-1300004427.cos.ap-nanjing.myqcloud.com/imgs/pos-icon.png" alt="">
+              自火车站乘坐K139/K8/K436/K108路即可到达</p>
         </div>
       </div>
     </div>
@@ -695,7 +708,7 @@
               initMap()
             }
             if (document.querySelector(".start")) {
-              document.querySelector(".start").style.display =  e.cur === 5 ? 'none':'block'
+              document.querySelector(".start").style.display = e.cur === 5 ? 'none' : 'block'
             }
 
 
